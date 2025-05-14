@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">BeFake</string>
+    <string name="firstName">Enter First Name</string>
+    <string name="lastName">Enter Last Name</string>
+    <string name="email">Enter Email</string>
+    <string name="password">Enter Password</string>
+    <string name="signedin">Already Signed In?</string>
+    <string name="login">Log In</string>
+    <string name="signup">Create Account</string>
+    <string name="register">Register</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
