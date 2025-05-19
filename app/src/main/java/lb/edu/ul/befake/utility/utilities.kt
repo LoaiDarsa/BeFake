@@ -1,4 +1,4 @@
-package lb.edu.ul.befake
+package lb.edu.ul.befake.utility
 
 import android.content.Context
 import android.widget.Toast

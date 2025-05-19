@@ -9,7 +9,6 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import lb.edu.ul.befake.R
 import lb.edu.ul.befake.databinding.FragmentSignUpBinding
-import lb.edu.ul.befake.showToast
 import lb.edu.ul.befake.signup.viewmodels.SignUpFragmentViewModel
 
 class SignUpFragment : Fragment() {
@@ -31,7 +30,7 @@ class SignUpFragment : Fragment() {
     }
 
     private fun setListeners() {
-        mBinding.textViewLoggin.setOnClickListener{
+        mBinding.buttonSignup.setOnClickListener{
             if (signupViewModel.emptyInput(requireContext(),
                     mBinding.editTextFirstName.text.toString(),
                     mBinding.editTextLastName.text.toString(),

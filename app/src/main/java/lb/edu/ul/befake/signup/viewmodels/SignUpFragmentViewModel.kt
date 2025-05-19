@@ -2,7 +2,7 @@ package lb.edu.ul.befake.signup.viewmodels
 
 import android.content.Context
 import androidx.lifecycle.ViewModel
-import lb.edu.ul.befake.showToast
+import lb.edu.ul.befake.utility.showToast
 
 class SignUpFragmentViewModel: ViewModel(){
     fun emptyInput(context: Context, firstName: String, lastName: String, email: String, password: String): Boolean {
