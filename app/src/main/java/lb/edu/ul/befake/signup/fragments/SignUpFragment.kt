@@ -32,11 +32,17 @@ class SignUpFragment : Fragment() {
 
     private fun setListeners() {
         mBinding.textViewLoggin.setOnClickListener{
-            if (signupViewModel.validInput(requireContext(),
+            if (signupViewModel.emptyInput(requireContext(),
                     mBinding.editTextFirstName.text.toString(),
-                    mBinding.editTextFirstName.text.toString(),
-                    mBinding.editTextFirstName.text.toString(),
-                    mBinding.editTextFirstName.text.toString())) {
+                    mBinding.editTextLastName.text.toString(),
+                    mBinding.editTextEmail.text.toString(),
+                    mBinding.editTextPassword.text.toString()) &&
+                    signupViewModel.validInput(requireContext(),
+                        mBinding.editTextFirstName.text.toString(),
+                        mBinding.editTextLastName.text.toString(),
+                        mBinding.editTextEmail.text.toString(),
+                        mBinding.editTextPassword.text.toString())
+                ) {
                 findNavController().navigate(
                     R.id.action_signUpFragment_to_logInFragment
                 )
